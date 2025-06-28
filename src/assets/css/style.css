@@ -1,8 +1,33 @@
-body {
-    font-family: "Segoe UI", sans-serif;
+/* Verbesserte Buttons für besseres UI/UX */
+
+.btn {
+    transition: background-color 0.3s, transform 0.1s;
 }
 
-#clickButton {
-    min-width: 200px;
-    min-height: 80px;
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+body {
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+}
+
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s;
 }
